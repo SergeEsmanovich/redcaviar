@@ -1,0 +1,436 @@
+/* 
+    Created on : 23.06.2015, 10:49:51
+    Author     : korolariya
+*/
+
+/*  insert Oleg  */
+
+.content_slider {
+    float:left;
+}
+
+.content_big_img {
+    padding:14px;
+    border: 1px solid #f0f0f0;
+    behavior: url('border-radius.htc');
+    border-radius: 10px;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    position: relative;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    display:inline-block;
+}
+
+.content_sm_img_hidden {
+    overflow: hidden;
+    display:inline-block;
+    vertical-align: middle;
+    padding:20px 0;
+}
+
+.content_sm_img {
+    padding: 0px 24px;
+}
+
+.content_sm_img ul li {
+    padding:14px;
+    border: 1px solid #f0f0f0;
+    behavior: url('border-radius.htc');
+    border-radius: 10px;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    position: relative;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    display:inline-block;
+    position:relative;
+    margin:0 4px;
+}
+
+.content_sm_img button {
+    border:0px;
+    outline:0px;
+    width:8px;
+    height:30px;
+    background: url('../img/button.png') no-repeat 0 0;
+    cursor:pointer;
+    padding:0px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.content_sm_img button.next {
+    background-position: 100% 0;
+}
+
+
+.desc {
+    display:inline-block;
+    float:right;
+    width:330px;
+}
+
+.description {
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:  10px;
+    margin-bottom:20px;
+}
+
+.description .head {
+    padding:14px;
+    border: 1px solid #f0f0f0;
+    behavior: url('border-radius.htc');
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    position: relative;
+    background: #f2f2f3;
+    background: -moz-linear-gradient(top, #fff 0%, #fdfdfd 50%, #fdfdfd 51%, #f2f2f3 100%);
+    background: -webkit-linear-gradient(top, #fff 0%,#fdfdfd 50%,#fdfdfd 51%,#f2f2f3 100%);
+    background: -o-linear-gradient(top, #fff 0%,#fdfdfd 50%,#fdfdfd 51%,#f2f2f3 100%);
+    background: linear-gradient(top, #fff 0%,#fdfdfd 50%,#fdfdfd 51%,#f2f2f3 100%);
+
+}
+
+.description .cont {
+    padding:0px 14px 0px;
+    border: 1px solid #f0f0f0;
+    behavior: url('border-radius.htc');
+    border-radius:  0 0 10px 10px;
+    -webkit-border-radius:  0 0 10px 10px;
+    -moz-border-radius:  0 0 10px 10px;
+    position: relative;
+}
+
+.description .head p {
+    display:inline-block;
+
+}
+
+.description .head p:nth-of-type(1) {
+    font-weight: bold;
+    padding-left: 14px;
+    position: relative;
+}
+
+.description .head p:nth-of-type(1):before {
+    content: '';
+    display: block;
+    width:6px;
+    height: 6px;
+    border:2px solid #fff6ff;
+    background: #39b54a;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    position: absolute;
+    top:2px;
+    left:0;
+}
+
+.description .head .stars {
+    display: inline-block;
+    width:62px;
+}
+
+.description .head .stars li {
+    width: 10px;
+    height: 10px;
+    float:left;
+    margin-right:2px;
+}
+
+.description .head .stars li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url('../img/star.png') no-repeat 0 100%;
+}
+
+.description .head .stars li a.active {
+    background: url('../img/star.png') no-repeat 0 0;
+}
+
+.description .stars-container {
+    display:inline-block;
+    float:right;
+    margin-right: 10px 
+}
+
+
+
+.description .head p:nth-of-type(2) {
+    float:right;
+}
+
+.description .cont p {
+    padding:15px 0px;
+    border-bottom: 1px dashed #cfcfcf;
+
+}
+
+.description .cont .num {
+    border-bottom: 0px;
+}
+
+.description .cont p span {
+    float:right;
+    color:#0086c3;
+
+}
+
+.description .cont p.price span {
+    color:#e76002;
+    font-size:2.4em;
+    font-weight:bold;
+    margin-top: -12px;
+}
+
+
+.description .num button {
+    border:0px;
+    outline:0px;
+    width:8px;
+    height:30px;
+    background: url('../img/button-num.png') no-repeat 0 0;
+    cursor:pointer;
+    padding:0px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.description .num button {
+    border:0px;
+    outline:0px;
+    width:8px;
+    height:30px;
+    background: url('../img/button-num.png') no-repeat 0 0;
+    cursor:pointer;
+    padding:0px;
+    display:inline-block;
+    vertical-align: top;
+    margin: 5px 2px;
+}
+
+.description .num button.next {
+    background-position: 100% 0;
+}
+
+.description .num span {
+    margin-top: -5px;  
+}
+
+.description .num input[type="text"] {
+    border-radius: 4px;
+    -webkit-border-radius: 4px ;
+    -moz-border-radius: 4px;
+    border:1px solid #c2c2c2;
+    box-shadow: 0px 0px 5px #ccc inset;
+    width:50px;
+    text-align: center;
+    margin:0px 5px;
+    padding:4px 0px;
+    vertical-align: top;
+    display:inline-block;
+}
+
+.btnbask {
+    display: inline-block;
+    background: url('../img/basket.png') no-repeat #36abd5;
+    background-size: 25px 20px;
+    background-position: 12px 8px;
+    behavior: url('border-radius.htc');
+    border-radius: 5px;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    text-shadow: 1px 1px 1px #aaa;
+    color: #ffffff;
+    padding: 10px 10px 10px 45px;
+    text-decoration: none;
+    font-size:1.2em;
+}
+
+.btnbpok {
+    display: inline-block;
+    background: url('../img/basket2.png') no-repeat #fff;
+    background-size: 25px 20px;
+    background-position: 12px 8px;
+    behavior: url('border-radius.htc');
+    border-radius: 5px;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    color: #36abd5;
+    padding: 10px 10px 10px 45px;
+    text-decoration: none;
+    border:1px solid #36abd5;
+    font-size:1.2em;
+    float:right;
+}
+
+.bsk {
+    margin-bottom:14px;
+}
+.desc .header_upper_sn {
+    float:right;
+    width:auto;
+    display:inline-block;
+}
+
+.pod {
+    float:right;
+    display:inline-block;
+    vertical-align: middle;
+    padding: 6px 0px;
+}
+
+.pod a {
+    color:#000;
+    margin-right:20px;
+    position: relative;
+    padding: 4px 0px;
+    padding-left: 30px;
+
+}
+
+.pod a:before {
+    content: '';
+    display: block;
+    width:22px;
+    height: 22px;
+    position: absolute;
+    top:2px;
+    left:0;
+    background: url('../img/pod.png') no-repeat #fff;
+}
+
+
+
+/* Базовый контейнер табов */
+.tabs {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 0px;
+    margin: 0 auto; 
+}
+/* стили секций с содержанием */
+section {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+}
+
+.tabs input {
+    display: none;
+}
+
+#tab1 {
+    position: relative;
+}
+
+
+
+/* стили вкладок (табов) */
+.tabs label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 10px 20px 10PX 30PX;
+    text-align: center;
+    color: #0898cb;
+    border-radius: 6px 6px 0 0;
+    text-decoration: underline;
+    position: relative;
+    background: url('../img/tab1.png') no-repeat 10px 10px;
+}
+
+.tabs label:nth-of-type(2) {
+    background: url('../img/tab2.png') no-repeat 10px 10px;
+}
+
+.tabs label:nth-of-type(2):hover {
+    background: url('../img/tab2-hover.png') no-repeat 10px 10px;
+}
+
+.tabs label:nth-of-type(3) {
+    background: url('../img/tab3.png') no-repeat 8px 10px;
+}
+
+.tabs label:nth-of-type(3):hover {
+    background: url('../img/tab3-hover.png') no-repeat 8px 9px;
+}
+
+
+.tabs label:hover {
+    background: url('../img/tab1-hover.png') no-repeat 10px 10px;
+}
+
+/* шрифт-иконки от Font Awesome в формате Unicode */
+
+/* изменения стиля заголовков вкладок при наведении */
+.tabs label:hover {
+    color: #e76100;
+    cursor: pointer;
+}
+/* стили для активной вкладки */
+.tabs input:checked + label {
+    color: #0898cb;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 -5px 7px rgba(0,0,0,0.2);
+    font-weight: 600;
+    text-decoration: none;
+    background: url('../img/tab1-hover.png') no-repeat 10px 10px #fff;
+
+}
+.tabs input:checked + label:nth-of-type(2) {
+    background: url('../img/tab2-hover.png') no-repeat 10px 10px #fff;
+}
+
+.tabs input:checked + label:nth-of-type(3) {
+    background: url('../img/tab3-hover.png') no-repeat 10px 10px #fff;
+}
+/* активация секций с помощью переключателя :checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+    display: block;
+}
+/* медиа запросы для различных типов носителей */  
+@media screen and (max-width: 680px) {
+    .tabs label {
+        font-size: 0;
+    }
+
+    .tabs label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .tabs label {
+        padding: 15px;
+    }
+}
+
+
+.zag {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+.btnbpok:hover {
+    display: inline-block;
+    background: url('../img/basket2-hover.png') no-repeat #36abd5;
+    background-size: 25px 20px;
+    background-position: 12px 8px;
+    color: #ffffff;
+}
+.btnbask:hover {
+    background: url('../img/basket.png') no-repeat #E86608;
+    background-size: 25px 20px;
+    background-position: 12px 8px;
+    color: #ffffff;
+    text-decoration:none;
+}

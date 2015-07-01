@@ -1,0 +1,22 @@
+<div class="caruselgoods">
+    <carousel  interval="myInterval" >
+        <slide ng-repeat="slide in slides track by $index" active="slide.active">
+            <div  ng-repeat="goods in slide.items"  class="box">
+                <a href="#/item">
+                <div class="tabitem_image">
+                    <img src="{{goods.image}}"></div>
+                <div class="tabitem_desc">
+                    <p>Икра по Сканднавски донных пород 30гр.</p>
+                </div>
+                <div class="tabitem_price">
+                    <p>{{goods.cost}} руб.</p>
+                </div>
+                </a>
+                <div class="tabitem_cart">
+                    <a href="#/basket" title="В корзину">В корзину</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </slide>
+    </carousel>
+</div>

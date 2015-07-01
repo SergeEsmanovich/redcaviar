@@ -1,0 +1,36 @@
+<div ng-show="show_futer_modules" class="futer_modul recept_modul">
+    <div class="usefull_block ubl">
+        <carousel  interval="myInterval" >
+            <slide ng-repeat="slide in slides track by $index" active="slide.active">
+                <!--<div compile="slide.html"></div>-->
+                <div class="content_block">
+                    <div class="title">Запеченная в духовке  сайра в горшочках</div>
+                    <div class="time">
+                        <p class=""><img src="img/icons/clocks.png" height="30" width="30" alt="clocks"> приготовление <br><strong>30 мин.</strong></p>
+                        <p class="diff"><span>Сложность:</span> Несложный</p>
+                    </div>
+                    <p class="diff-lvl">
+                        <span class="lvl1"></span>
+                        <span class="lvl2"></span>
+                        <span class="lvl3"></span>
+                        <span class="lvl4"></span>
+                        <span class="lvl5"></span>
+                    </p>
+                    <p class="share" ng-click="show_social()"><span></span><a href="">Поделиться</a></p>
+                    <p ng-show="social" class="share-social-icons">
+                        <a href=""><span class="soc-share i1"></span></a>
+                        <a href=""><span class="soc-share i2"></span></a>
+                        <a href=""><span class="soc-share i3"></span></a>
+                        <a href=""><span class="soc-share i4"></span></a>
+                        <a href=""><span class="soc-share i5"></span></a>
+                        <a href=""><span class="soc-share i6"></span></a>
+                        <a href=""><span class="soc-share i7"></span></a>
+                    </p>
+                    <div class="read_more">
+                        <button type="button">Подробнее</button>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>

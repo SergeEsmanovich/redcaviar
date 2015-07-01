@@ -1,0 +1,54 @@
+<!--<div id="cssmenu">
+    <ul>
+        <li class="has-sub"><a href="#/catalog"><span>Икра</span></a>
+            <ul>
+                <li><a href="#/catalog"><span>Product 1</span></a></li>
+                <li><a href="#/catalog"><span>Product 2</span></a></li>
+            </ul>
+        </li>
+        <li class="has-sub"><a href="#/catalog"><span>Рыба</span></a>
+            <ul>
+                <li><a href="#/catalog"><span>Product 1</span></a></li>
+                <li><a href="#/catalog"><span>Product 2</span></a></li>
+            </ul>
+        </li>
+        <li class="active has-sub"><a href="#/catalog"><span>Живая продукция</span></a>
+            <ul>
+                <li><a href="#/catalog"><span>Живая рыба</span></a></li>
+                <li><a href="#/catalog"><span>Живые раки</span></a></li>
+                <li><a href="#/catalog"><span>Краб</span></a></li>
+                <li><a href="#/catalog"><span>Лангустины</span></a></li>
+                <li><a href="#/catalog"><span>Омар</span></a></li>
+                <li class="last"><a href="#"><span>Устрицы и моллюски</span></a></li>
+            </ul>
+        </li>
+        <li class="has-sub"><a href='#/catalog'><span>Морепродукты</span></a>
+            <ul>
+                <li><a href="#/catalog"><span>Product 1</span></a></li>
+                <li><a href="#/catalog"><span>Product 2</span></a></li>
+            </ul>
+        </li>
+        <li><a href='#/catalog'><span>Экзотика</span></a></li>
+        <li class="has-sub"><a href='#/catalog'><span>Аксессуары</span></a>
+            <ul>
+                <li><a href="#/catalog"><span>Product 1</span></a></li>
+                <li><a href="javascript:void(0)"><span>Product 2</span></a></li>
+            </ul>
+        </li>
+        <li class='last'><a href='#/catalog'><span>Подарочный набор</span></a></li>
+    </ul>
+</div>-->
+<div class="leftmenu">
+    <accordion close-others="oneAtATime">
+        <accordion-group ng-class="getClass(item.status)" ng-repeat="item in menuacc" is-open="item.status">
+            <accordion-heading>
+                {{item.title}} <i class="pull-right fa" ng-class="{'fa-angle-down': item.status, 'fa-angle-right': !item.status}"></i>
+            </accordion-heading>
+            <ul>
+                <li ng-repeat="link in item.content"><a href="{{link.link}}"><span>{{link.name}}</span></a></li>
+            </ul>
+        </accordion-group>
+        
+        
+    </accordion>
+</div>

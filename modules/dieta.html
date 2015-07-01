@@ -1,0 +1,33 @@
+<div ng-show="show_futer_modules" class="futer_modul dieta_modul">
+    <div class="usefull_block ubl">
+        <carousel  interval="myInterval" >
+            <slide ng-repeat="slide in slides track by $index" active="slide.active">
+                <!--<div compile="slide.html"></div>-->
+                <div class="content_block2">
+                    <div class="title">Рыбнаядетокс-диета на 3 дня</div>
+                    <br>
+                    <p width="220px" class="descr text-left">Рыбная диета на 3 дня лучше всего 
+                        подойдет для зимнего времени, 
+                        когда нашему организму из-за недостатка 
+                        солнечного света не хватает витамина D, 
+                        которого в рыбе в избытке.</p>
+                    <p class="days text-left"><span></span> <strong>14 дней</strong></p>
+                    <p class="to-bookmarks text-left"><span></span> <a href="#">В закладки</a></p>
+                    <p class="share text-left" ng-click="show_social()"><span></span><a href="">Поделиться</a></p>
+                    <p ng-show="social" class="share-social-icons">
+                        <a href=""><span class="soc-share i1"></span></a>
+                        <a href=""><span class="soc-share i2"></span></a>
+                        <a href=""><span class="soc-share i3"></span></a>
+                        <a href=""><span class="soc-share i4"></span></a>
+                        <a href=""><span class="soc-share i5"></span></a>
+                        <a href=""><span class="soc-share i6"></span></a>
+                        <a href=""><span class="soc-share i7"></span></a>
+                    </p>
+                    <div class="read_more">
+                        <button type="button">Подробнее</button>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>

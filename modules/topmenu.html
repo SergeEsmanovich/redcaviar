@@ -1,0 +1,87 @@
+<nav id="header-nav">
+    <div class="headcatalog">
+        <a ng-click="menu_activeted()" href="" class="headcat">КАТАЛОГ</a>
+    </div>
+    <ul ng-show="activ_catalog" id="cat-menu">
+        <li ng-repeat="cat in topmenu track by $index"   class="has-submenu">
+            <a ng-click="activeted_menu($index)" href="#/home">
+                {{cat.title}} <i class="fa fa-chevron-right"></i>
+            </a>
+            <ul ng-class="cat.class"  class="submenu caviar">
+                <li ng-repeat="item in cat.submenu">
+                    <a href="#/home">{{item.title}}</a>
+                </li>
+            </ul>
+        </li>
+        <!--							<li class="has-submenu">
+                                                                        <a href="#">
+                                                                                Рыба <i class="fa fa-chevron-right"></i>
+                                                                        </a>
+                                                                        <ul class="submenu fish">
+                                                                                <li><a href="#">Рыба</a></li>
+                                                                                <li><a href="#">Рыба</a></li>
+                                                                                <li><a href="#">Рыба</a></li>
+                                                                                <li><a href="#">Рыба</a></li>
+                                                                                <li><a href="#">Рыба</a></li>
+                                                                        </ul>
+        
+                                                                </li>
+                                                                <li class="has-submenu">
+                                                                        <a href="#">
+                                                                                Живая продукция
+                                                                                <i class="fa fa-chevron-right"></i>
+                                                                        </a>
+                                                                        <ul class="submenu live-prod">
+                                                                                <li>
+                                                                                        <a href="#">Живая рыба</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                        <a href="#">Краб</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                        <a href="#">Устрицы и моллю</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                        <a href="#">Живые раки</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                        <a href="#">Омар</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                        <a href="#">Лангустины</a>
+                                                                                </li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li class="has-submenu">
+                                                                        <a href="#">
+                                                                                Морепродукты
+                                                                                <i class="fa fa-chevron-right"></i>
+                                                                        </a>
+                                                                        <ul class="submenu seafood">
+                                                                                <li><a href="#">Морепродукт</a></li>
+                                                                                <li><a href="#">Морепродукт</a></li>
+                                                                                <li><a href="#">Морепродукт</a></li>
+                                                                                <li><a href="#">Морепродукт</a></li>
+                                                                                <li><a href="#">Морепродукт</a></li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="#">Экзотика</a>
+        
+                                                                </li>
+                                                                <li class="has-submenu">
+                                                                        <a href="#">
+                                                                                Аксессуары
+                                                                                <i class="fa fa-chevron-right"></i>
+                                                                        </a>
+                                                                        <ul class="submenu acsesuary">
+                                                                                <li><a href="#">Аксессуар</a></li>
+                                                                                <li><a href="#">Аксессуар</a></li>
+                                                                                <li><a href="#">Аксессуар</a></li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="#">Подарочный набор</a>
+                                                                </li>-->
+    </ul>
+</nav>

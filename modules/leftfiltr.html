@@ -1,0 +1,88 @@
+<div class="modul" ng-show="show_left_filter">
+    <div class="filter start">
+        <h4>Фильтр</h4>
+        <p class="myhide">
+            <a ng-hide="visible_form" ng-click="visible_form=1" >Показать<i class="fa fa-chevron-down"></i></a>
+            <a ng-show="visible_form" ng-click="visible_form=0" >Скрыть<i class="fa fa-chevron-up"></i></a>
+        </p>
+        <form ng-show="visible_form" action="">
+            <ul>
+                <li class="price">Цена упаковки</li>
+                <li>
+                    <label for="p_from">от</label>
+                    <input type="text" placeholder="45.00">
+                    <label for="p_to">до</label>
+                    <input type="text" placeholder="26.000">
+                </li>
+                <li class="caloria">Калорийность</li>
+                <li>
+                    <label for="c_from">от</label>
+                    <input type="text" placeholder="150">
+                    <label for="c_to">до</label>
+                    <input type="text" placeholder="270">
+                </li>
+                <li>
+                    <select name="method" id="">
+                        <option value="Все" disabled>Все</option>
+                        <option value="банка">банка</option>
+                        <option value="вакуумная упаковка">вакуумная упаковка</option>
+                        <option value="коробка">коробка</option>
+                        <option value="пакет">пакет</option>
+                        <option value="полиэтиленовая">полиэтиленовая</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="ready-to-eat" id="">
+                        <option value="Готовность к употреблению" disabled>Готовность к употреблению</option>
+                        <option value="да">Да</option>
+                        <option value="нет">Нет</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="type-packing" id="">
+                        <option value="Вид фасовки" disabled>Вид фасовки</option>
+                        <option value="1">№1</option>
+                        <option value="2">№2</option>
+                        <option value="3">№3</option>
+                        <option value="4">№4</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="madein" id="">
+                        <option value="value" disabled>Производитель</option>
+                        <option value="value">value</option>
+                        <option value="value">value</option>
+                        <option value="value">value</option>
+                        <option value="value">value</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="location" id="">
+                        <option value="value" disabled>Место улова</option>
+                        <option value="value">value</option>
+                        <option value="value">value</option>
+                        <option value="value">value</option>
+                        <option value="value">value</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="salty" id="" value="Содержание соли">
+                        <option value="Содержание соли" disabled>Содержание соли</option>
+                        <option value="value">value</option>
+                        <option value="value">value</option>
+                        <option value="value">value</option>
+                        <option value="value">value</option>
+                    </select>
+                </li>
+                <li id="check-box">
+                    <input id="spec" type="checkbox">
+                    <label for="spec" class="checkbox">Спецпродложение</label>
+                </li>
+                <li>
+                    <input type="submit" value="Показать">
+                    <input type="reset">
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>

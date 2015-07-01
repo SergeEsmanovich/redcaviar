@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="RedcaviarApp">
+    <head>
+        <meta charset="windows-1251">
+        <title>Интернет магазин морепродуктов и рыбы "REDCAVIAR" с доставкой на дом</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+        <link rel="stylesheet" type="text/css" href="css/accordionmenu.css" />
+        <script src="/bower_components/angular/angular.min.js"></script>
+        <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="/bower_components/angular-route/angular-route.min.js"></script>
+        <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="/bower_components/angular-inview/angular-inview.js"></script>
+        <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="/libs/ui-bootstrap-tpls-0.13.0.min.js"></script>
+
+
+        <script src="js/app.js"></script>
+        <!--<script src="js/animations.js"></script>-->
+        <script src="js/controllers.js"></script>
+        <!--<script src="js/filters.js"></script>-->
+        <!--<script src="js/services.js"></script>-->
+        <script src="js/directives.js"></script>
+
+
+
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="main">
+                <div class="header">
+                    <div class="header_upper">
+                        <div class="header_upper_menu">
+                            <ul>
+                                <li><a href="#/home" class="header_menu_about" title="О магазине">О магазине</a></li>
+                                <li><a href="#/home" class="header_menu_delivery" title="Доставка">Доставка</a></li>
+                                <li><a href="#/home" class="header_menu_warranty" title="Гарантия">Гарантия</a></li>
+                                <li><a href="#/home" class="header_menu_contacts" title="Контакты">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header_upper_sn">
+                            <ul>
+                                <li><a href="#/home" class="header_snvk" title="ВКонтакте"></a></li>
+                                <li><a href="#/home" class="header_sntw" title="Твиттер"></a></li>
+                                <li><a href="#/home" class="header_snfb" title="Фейсбук"></a></li>
+                                <li><a href="#/home" class="header_snok" title="Одноклассники"></a></li>
+                                <li><a href="#/home" class="header_sngp" title="Google Plus"></a></li>
+                                <li><a href="#/home" class="header_snyt" title="Youtube"></a></li>
+                                <li><a href="#/home" class="header_snin" title="Инстаграм"></a></li>
+                            </ul>
+                        </div>
+                        <div  class="header_login">
+                            <a ng-click="login = 1" href="#/home" class="header_login_enter" title="Войти">Войти</a>
+                        </div>
+                        <div ng-show="login" class="login-container">
+                            <div class="login-form">
+                                <div class="arrow">
+                                    <div class="inner">
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <div class="left-side">
+                                        <p>Войти как пользователь</p>
+                                        <div class="social-nets">
+                                            <div ><a class="soc-net vk" href=""></a></div>
+                                            <div ><a class="soc-net fb" href=""></a></div>
+                                            <div ><a class="soc-net ok" href=""></a></div>
+                                            <div ><a class="soc-net gp" href=""></a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="right-side">
+                                        <input type="password" placeholder="Пароль">
+                                        <input type="text" placeholder="Логин">
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div>
+                                        <div class="vhod"> 
+                                            <button type="submit">Войти</button>
+                                        </div>
+                                        <div class="rememb">
+                                            <p><a href="">Напомнить пароль</a></p>
+                                            <p><a href="">Регистрация</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="header_middle">
+                        <div class="logo">
+                            <a href="#/home" title="Red Caviar"><img src="img/logo.png" width="197" height="91"></a>
+                        </div>
+                        <div class="middle_icons">
+                            <div class="mid_clean">&nbsp;</div>
+                            <div class="mid_delivery">
+                                <img src="img/icons/i-middle-delivery_57x57.png" width="29" height="29">
+                                <p>Ближайшая доставка<br>
+                                    11 апреля, 06:00 - 09:00<br>
+                                    <a href="#/home" class="midunderline">за 99 руб.</a></p>
+                            </div>
+                            <div class="mid_warranty">
+                                <img src="img/icons/i-middle-warranty_41x52.png" width="21" height="27">
+                                <p><a href="#/home" class="midunderline">Гарантия</a><br>
+                                    30 дней на<br>
+                                    обмен и возврат</p>
+                            </div>
+                            <div class="mid_yamarket">
+                                <img src="img/icons/i-middle-yandexmarket_48x48.png" width="25" height="25">
+                                <p>Высший рейтинг<br>
+                                    на <a href="#/home" class="midunderline">Яндекс.Маркет</a></p>
+                                <img src="img/icons/stars.png" width="46" height="9" style="padding-top: 3px;">
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <div class="phonenum">
+                                <h5>7 (495) 508 38 62</h5>
+                            </div>
+                            <div class="worktime">
+                                <p>Время работы:<br><strong>Пн-Вс 10-19</strong></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#/home" class="btncall" title="Заказать звонок">Заказать звонок</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="header_foot">
+                        <topmenu></topmenu>
+                        <div class="headsearch">
+                            <div class="form-group  has-feedback">
+                                <input placeholder="Поиск по сайту..."  type="search" class="form-control" >
+                                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="headcart">
+                            <div class="cartbutton">
+                                <a href="#/basket" class="headcartbut"></a>
+                            </div>
+                            <div class="carttext">
+                                <p><span class="carttexttitle">Ваша корзина</span><br>
+                                    <span class="carttextprice">1</span> товар <span class="carttextprice">160 руб.</span></p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div ng-hide="carusel_futer" class="bread_crumbs">
+                        <ul>
+                            <li>Главная страница<i class="fa fa-angle-right"></i></li>
+                            <li>Икра<i class="fa fa-angle-right"></i></li>
+                            <li class="active">Красная икра</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <sliderhome></sliderhome>
+                <tabsslidershome></tabsslidershome>
+                <div class="content">
+                    <div class="sideleft">
+                        <leftmenu></leftmenu>
+                        <br>
+                        <filter></filter>
+                        <br>
+                        <div class="clear"></div>
+                        <br>
+                        <div  class="social_modul">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="line"></div>
+                            <div class="image">
+                                <img src="images/vk.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="maincontent">
+                        <div id="doc-count">
+                        </div>
+                        <div class="view-container">
+                            <div ng-view class="view-frame"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <recept modul="recept"></recept>
+                        </div>
+                        <div class="col-md-6">
+                            <dieta modul="dieta"></dieta>
+                        </div>
+                    </div>
+                    <br>
+                    <div ng-hide="carusel_futer">
+                        <div class="row">
+                            <div class="title_futer_block">Просмотренные товары</div>
+                            <caruselgoods></caruselgoods>
+                        </div>
+                        <div class="row">
+                            <div class="title_futer_block">Рекомендуемые товары</div>
+                            <caruselgoods></caruselgoods>
+                        </div>
+                    </div>
+
+
+                    <div class="clear"></div>
+                </div>
+
+
+            </div>
+            <div class="footer">
+                <div class="footer_menu">
+                    <div class="fm2">
+                        <ul>
+                            <li><a href="#/home">Почему мы?</a></li>
+                            <li><a href="#/home">Рецепты</a></li>
+                            <li><a href="#/home">Диеты</a></li>
+                            <li><a href="#/home">Как купить</a></li>
+                            <li><a href="#/home">Доставка</a></li>
+                            <li><a href="#/home">Гарантия</a></li>
+                            <li><a href="#/home">Возврат</a></li>
+                            <li><a href="#/home">О магазине</a></li>
+                            <li><a href="#/home">HoReCa</a></li>
+                            <li><a href="#/home">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_podpis">
+                    <div class="fp2">
+                        Подпишись! Получи скидку 5% и будь в курсе новых акций!
+                        <input type="text" placeholder="email" class="fp2input">
+                        <a href="#/home" class="fp2button">Подписаться</a>
+                    </div>
+                </div>
+                <div class="footer_req">
+                    <div class="footer_address">
+                        <p>Интернет-магазин морских деликатесов.<br>
+                            Телефон: 8 (495) 508 38 62<br>
+                            Адрес: г. Москва, ул.Боровая д.7, стр.2</p>
+                    </div>
+                    <div class="footer_yamarket">
+                        <div class="fyml">
+                            <img src="img/icons/i-middle-yandexmarket_48x48.png" width="30" height="30">
+                        </div>
+                        <div class="fymd">
+                            <img src="img/icons/stars.png" width="46" height="9" style="padding-top: 3px;">
+                            <p>Высший рейтинг<br>
+                                на <a href="#/home" class="midunderline">Яндекс.Маркет</a></p>
+                        </div>                
+                    </div>
+                    <div class="footer_payment">
+                        Способы оплаты:<br>
+                        <img src="img/payment.png">
+                    </div>
+                    <div class="footer_social">
+                        <p class="fos">Мы в соцсетях -</p>
+                        <div class="header_upper_sn">
+                            <ul>
+                                <li><a href="#/home" class="header_snvk" title="ВКонтакте"></a></li>
+                                <li><a href="#/home" class="header_sntw" title="Твиттер"></a></li>
+                                <li><a href="#/home" class="header_snfb" title="Фейсбук"></a></li>
+                                <li><a href="#/home" class="header_snok" title="Одноклассники"></a></li>
+                                <li><a href="#/home" class="header_sngp" title="Google Plus"></a></li>
+                                <li><a href="#/home" class="header_snyt" title="Youtube"></a></li>
+                                <li><a href="#/home" class="header_snin" title="Инстаграм"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

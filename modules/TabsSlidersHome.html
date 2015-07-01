@@ -1,0 +1,17 @@
+<div ng-show="show_tabs" class="tabs_sl_home">
+
+
+    <div class="mytabs">
+        <tabset>
+<!--            <tab heading="Статика">
+                <caruselgoods></caruselgoods>
+            </tab>-->
+            <tab  ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+                <div compile="tab.content"></div>
+            </tab>
+        </tabset>
+    </div>
+
+
+
+</div>

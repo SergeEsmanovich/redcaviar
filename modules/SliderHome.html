@@ -1,0 +1,29 @@
+<div ng-show="show_banner">
+    <div class="clear"></div>
+    <div class="clearfix"></div>
+    <div class="slider_home">
+        <div style="height: 335px">
+            <carousel style="height: 335px" interval="myInterval">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <div class="slider_text">
+                            <h5>{{slide.name}}</h5>
+                            <p>
+                                {{slide.text}}
+                            </p>
+                            <p class="bannerprice">
+                                Цена за уп-к.
+                                <strong>{{slide.cost}}</strong>
+                                руб.
+                            </p>
+                            <a href="#/basket" class="bannercart" title="В корзину">В корзину</a>
+                        </div>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="clearfix"></div>
+</div>

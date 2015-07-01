@@ -1,0 +1,85 @@
+﻿<div class="modul_basket">
+    <div class="myconteiner">
+        <div class="title">
+            Оформление заказа
+        </div>
+        <table>
+            <tr>
+                <th colspan="2">Товары</th>
+                <th>Количество</th>
+                <th>Цена</th>
+                <th></th>
+            </tr>
+
+            <tr ng-repeat="goods in orders track by $index">
+                <td>
+                    <div class="image">
+                        <img src="img/goods/caviar1_123x87.jpg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <span class="text">
+                        {{goods.name}}
+                    </span>
+                </td>
+                <td>
+                    <div class="col">
+                        <button ng-click="goods.count = goods.count - 1" class="left"><</button>
+                        <input ng-model="goods.count" type="text" value="1">
+                        <button ng-click="goods.count = goods.count + 1" class="right">></button>
+                    </div>
+                </td>
+                <td>
+                    <span class="orange">
+                        {{goods.cost}} руб.
+                    </span>
+                </td>
+                <td>
+                    <div class="menu_order">
+                        <a ng-click="del_goods($index)" href="">Удалить</a>
+                        <a href="">Отложить</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <div class="info_basket">
+            <div class="discount">
+                <span>Введите код купона для скидки</span>
+                <input type="text">
+            </div>
+            <div class="info_order">
+                <p>Товаров на: <span><b>{{totalcost}} руб.</b></span></p>
+                <p>Скидка <span class="orange">3%</span></p>
+                <p>В том числе НДС: <span>0 руб.</span></p>
+            </div>
+            <div class="clear"></div>
+            <hr>
+            <div class="buttons">
+                <p>Итого: <span class="orange">{{result}} руб.</span></p>
+                <p><button class="re"><span class="glyphicon glyphicon-refresh"></span>Пересчитать</button><a href="#/order">Оформить заказ</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+
+    <!--    <div ng-init="checked = true">
+            <label>
+                <input type="checkbox" ng-model="checked" style="float:left; margin-right:10px;"> Is Visible...
+            </label>
+            <div class="check-element sample-show-hide" ng-show="checked" style="clear:both;">
+                Visible...
+            </div>
+        </div>
+    
+        <p>
+            <input type="button" value="set" ng-click="myCssVar = 'css-class'">
+            <input type="button" value="clear" ng-click="myCssVar = ''">
+            <br>
+            <span ng-class="myCssVar">CSS-Animated Text</span>
+        </p>-->
+
+
+</div>

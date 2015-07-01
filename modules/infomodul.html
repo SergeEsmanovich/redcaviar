@@ -1,0 +1,9 @@
+<div id="infomodul">
+    <div class="content_carousel">
+        <carousel  interval="myInterval" >
+            <slide ng-repeat="slide in slides track by $index" active="slide.active">
+                <div class="text_left" compile="slide.html"></div>
+            </slide>
+        </carousel>
+    </div>
+</div>
